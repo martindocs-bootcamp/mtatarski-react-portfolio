@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Bug Tracker App",
+    "description": "Bug tracking system with customizable options, detailed info, and easy search/filter capabilities.",
+    "img_path": "path"
+  },
+  {
+    "id": 2,
+    "title": "Game Hub",
+    "description": "The Game Hub project is a team effort to create a bunch of short games using free APIs.",
+    "img_path": "path"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "The weather Dashboard using The Open Weather Map.",
+    "img_path": "path"
+  },
+  {
+    "id": 4,
+    "title": "Readme Generator",
+    "description": "Command-line application built in Node.js to simplify the creation of professional README files for GitHub projects.",
+    "img_path": "path"
+  },
+  {
+    "id": 5,
+    "title": "Books Finder API",
+    "description": "Uses Google Books API, leverages 'async/await' for efficiency, and offers a user-friendly interface to search, view, and save books.",
+    "img_path": "path"
+  },
+  {
+    "id": 6,
+    "title": "SMS Integration",
+    "description": "The implementation of SMS integration with the MERN stack using Twilio.",
+    "img_path": "path"
+  }
+]
