@@ -1,13 +1,25 @@
-import Navigation from "./components/Navigation"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  Home,
+  Projects,
+  Contact,
+  ErrorPage,
+  Navigation
+} from "./components/";
 
 function App() {
-
   return (
-    <>
-    <Navigation />
-     
-    </>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;
