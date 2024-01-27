@@ -39,17 +39,7 @@ const ProjectCard = ({
                 >{label}</a>
               )
             })
-          }
-          {/* <a 
-            href={live_url} 
-            className="btn btn-primary card-btn-live" 
-            target='_blank'
-            rel="noopener noreferrer"
-          >Live</a>          
-          <a 
-            href={code_url} 
-            className="btn btn-secondary card-btn-code"
-          >Code</a>           */}
+          }         
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
 import AboutMeCard from "./AboutMeCard";
 import SharedLayout from "./SharedLayout";
+import ContactModal from "./ContactModal";
 
 export {
   Contact,
@@ -16,4 +17,5 @@ export {
   ProjectCard,
   AboutMeCard,
   SharedLayout,
+  ContactModal,
 }
