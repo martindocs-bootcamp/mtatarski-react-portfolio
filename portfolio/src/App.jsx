@@ -11,7 +11,7 @@ import {
 function App() {
   return (
     <Router>
-      <Navigation />      
+      <Navigation />         
       <Routes>
         <Route index element={<Home />} />
         <Route path="projects" element={<Projects />} />

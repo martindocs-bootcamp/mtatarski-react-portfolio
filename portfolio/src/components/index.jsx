@@ -3,7 +3,8 @@ import ErrorPage from "./ErrorPage";
 import Home from "./Home";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
-import Card from "./Card";
+import ProjectCard from "./ProjectCard";
+import AboutMeCard from "./AboutMeCard";
 
 export {
   Contact,
@@ -11,5 +12,6 @@ export {
   Home,
   Navigation,
   Projects,
-  Card,
+  ProjectCard,
+  AboutMeCard,
 }

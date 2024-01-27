@@ -1,6 +1,6 @@
 import {PropTypes} from 'prop-types';
 
-const Card = ({
+const ProjectCard = ({
   image, 
   title, 
   description, 
@@ -22,7 +22,7 @@ const Card = ({
   )
 }
 
-Card.propTypes = {
+ProjectCard.propTypes = {
   image: PropTypes.string.isRequired, 
   title: PropTypes.string.isRequired, 
   description: PropTypes.string.isRequired, 
@@ -30,4 +30,4 @@ Card.propTypes = {
   link_code: PropTypes.string.isRequired
 }
 
-export default Card;
+export default ProjectCard;
