@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
 import AboutMeCard from "./AboutMeCard";
+import SharedLayout from "./SharedLayout";
 
 export {
   Contact,
@@ -14,4 +15,5 @@ export {
   Projects,
   ProjectCard,
   AboutMeCard,
+  SharedLayout,
 }

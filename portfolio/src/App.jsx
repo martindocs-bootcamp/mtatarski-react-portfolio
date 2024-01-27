@@ -4,21 +4,22 @@ import {
   Home,
   Projects,
   Contact,
-  ErrorPage,
-  Navigation,
+  ErrorPage, 
+  SharedLayout,
 } from "./components/";
 
 function App() {
   return (
-    <Router>
-      <Navigation />         
+    <Router>    
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
       </Routes>
-    </Router>
+    </Router>    
   )
 }
 
