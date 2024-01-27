@@ -4,18 +4,52 @@ const ProjectCard = ({
   image, 
   title, 
   description, 
-  link_live, 
-  link_code
+  tools,
+  url,
 }) => {
+  
   return (
-    <div className="card card-custom">     
-      <img src={image} className="card-img-top" alt={image} />
+    <div className="card project">     
+      <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
+        <ul className='project-tools'>      
+          {
+            tools.map((tool, index)=> {
+              return(
+              <li 
+                key={index}
+                className='project-tool'
+              >{tool}</li>)
+            })
+          }
+        </ul>
         <div className="card-footer">
-          <a href={link_live} className="btn btn-primary card-btn-live">Live</a>          
-          <a href={link_code} className="btn btn-secondary card-btn-code">Code</a>          
+          {
+            url.map(({label, url}, index) => {
+                           
+              return (
+                <a 
+                  key={index}
+                  href={url} 
+                  className="btn btn-primary card-btn-live" 
+                  target='_blank'
+                  rel="noopener noreferrer"
+                >{label}</a>
+              )
+            })
+          }
+          {/* <a 
+            href={live_url} 
+            className="btn btn-primary card-btn-live" 
+            target='_blank'
+            rel="noopener noreferrer"
+          >Live</a>          
+          <a 
+            href={code_url} 
+            className="btn btn-secondary card-btn-code"
+          >Code</a>           */}
         </div>
       </div>
     </div>
@@ -26,8 +60,8 @@ ProjectCard.propTypes = {
   image: PropTypes.string.isRequired, 
   title: PropTypes.string.isRequired, 
   description: PropTypes.string.isRequired, 
-  link_live: PropTypes.string.isRequired, 
-  link_code: PropTypes.string.isRequired
+  tools: PropTypes.array.isRequired,
+  url: PropTypes.array.isRequired,   
 }
 
 export default ProjectCard;

@@ -1,38 +1,104 @@
 [
   {
     "id": 1,
+    "img_path": "./assets/images/bug-tracker.png",
     "title": "Bug Tracker App",
     "description": "Bug tracking system with customizable options, detailed info, and easy search/filter capabilities.",
-    "img_path": "../assets/images/bug-tracker.png"
+    "tools": ["MongoDB", "Express.js", "React", "Node.js", "Sass"],
+    "url": [
+      {
+        "label": "demo",
+        "url": "https://github.com/martindocs/bug-tracker-public"
+      },
+      {
+        "label": "video",
+        "url" : "https://www.youtube.com/watch?v=AladMbkvbgM"
+      }
+    ]    
   },
   {
     "id": 2,
+    "img_path": "./assets/images/flashcard.png",
     "title": "Game Hub",
     "description": "The Game Hub project is a team effort to create a bunch of short games using free APIs.",
-    "img_path": "../assets/images/flashcard.png"
+    "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
+    "url": [
+      {
+        "label": "live",
+        "url" : "https://saif-uddin-93.github.io/flash-card-trivia/flashcard.html"}
+      ,
+      {
+        "label": "code",
+        "url" : "https://github.com/martindocs/flash-card-game"
+      }
+    ]      
   },
   {
     "id": 3,
+    "img_path": "./assets/images/weather-dashboard.png",
     "title": "Weather Dashboard",
     "description": "The weather Dashboard using The Open Weather Map.",
-    "img_path": "../assets/images/weather-dashboard.png"
+    "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
+    "url": [
+      {
+        "label": "live",
+        "url" : "https://martindocs.github.io/mtatarski-weather-dashboard/"
+      },
+      {
+        "label": "code",
+        "url" : "https://github.com/martindocs/mtatarski-weather-dashboard"
+      }
+    ]       
   },
   {
     "id": 4,
+    "img_path": "./assets/images/readme-generator.png",
     "title": "Readme Generator",
     "description": "Command-line application built in Node.js to simplify the creation of professional README files for GitHub projects.",
-    "img_path": "../assets/images/readme-generator.png"
+    "tools": ["JavaScript (ES6+)", "Node.js"],
+    "url": [
+      {
+        "label": "video",
+        "url" : "https://www.youtube.com/watch?v=ZlBIzv1o_7M"
+      },
+      {
+        "label": "code",
+        "url" : "https://github.com/martindocs/mtatarski-readme-generator"
+      }
+    ]     
   },
   {
     "id": 5,
+    "img_path": "./assets/images/book-search.png",
     "title": "Books Finder API",
     "description": "Uses Google Books API, leverages 'async/await' for efficiency, and offers a user-friendly interface to search, view, and save books.",
-    "img_path": "../assets/images/book-search.png"
+    "tools": ["JavaScript (ES6+)", "API", "HTML", "CSS"],
+    "url": [
+      {
+        "label": "live",
+        "url" : "https://martindocs.github.io/book-finder-api/"
+      },
+      {
+        "label": "code",
+        "url" : "https://github.com/martindocs/book-finder-api"
+      }
+    ]       
   },
   {
     "id": 6,
-    "title": "SMS Integration",
-    "description": "The implementation of SMS integration with the MERN stack using Twilio.",
-    "img_path": "../assets/images/sms-integration.png"
+    "img_path": "./assets/images/calculator.png",
+    "title": "Calculator",
+    "description": "A calculator with basic functionality made in Vanilla Javascript.",
+    "tools": ["JavaScript (ES6+)", "HTML", "CSS"],
+    "url": [
+      {
+        "label": "live",
+        "url" : "https://martindocs-javascript.github.io/calculator/"
+      },
+      {
+        "label": "code",
+        "url" : "https://github.com/martindocs-javascript/calculator"
+      }
+    ]       
   }
 ]
