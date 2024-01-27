@@ -5,13 +5,13 @@ import {
   Projects,
   Contact,
   ErrorPage,
-  Navigation
+  Navigation,
 } from "./components/";
 
 function App() {
   return (
     <Router>
-      <Navigation />
+      <Navigation />      
       <Routes>
         <Route index element={<Home />} />
         <Route path="projects" element={<Projects />} />
