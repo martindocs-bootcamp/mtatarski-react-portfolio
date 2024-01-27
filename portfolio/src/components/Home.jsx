@@ -1,6 +1,12 @@
 import profileImg from '../assets/images/me.png';
+import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
 
 const Home = () => {
+
+  const openPdfInNewTab = () => {
+    window.open(resume, '_blank');
+  }
+
   return (
     <div className="card about">
       <div className="row">      
@@ -25,7 +31,7 @@ const Home = () => {
             </div>
             <div className='about-resume'>
               <i className="fa-regular fa-file"></i>
-              <a href="#">Resume</a>              
+              <button onClick={openPdfInNewTab}>Resume</button>              
             </div>           
             <ul className='about-skills'>
               <li className='about-skill'>React</li>
