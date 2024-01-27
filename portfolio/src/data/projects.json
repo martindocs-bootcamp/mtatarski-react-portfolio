@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img_path": "./assets/images/bug-tracker.png",
+    "img_path": "bug-tracker.png",
     "title": "Bug Tracker App",
     "description": "Bug tracking system with customizable options, detailed info, and easy search/filter capabilities.",
     "tools": ["MongoDB", "Express.js", "React", "Node.js", "Sass"],
@@ -18,7 +18,7 @@
   },
   {
     "id": 2,
-    "img_path": "./assets/images/flashcard.png",
+    "img_path": "flashcard.png",
     "title": "Game Hub",
     "description": "The Game Hub project is a team effort to create a bunch of short games using free APIs.",
     "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
@@ -35,7 +35,7 @@
   },
   {
     "id": 3,
-    "img_path": "./assets/images/weather-dashboard.png",
+    "img_path": "weather-dashboard.png",
     "title": "Weather Dashboard",
     "description": "The weather Dashboard using The Open Weather Map.",
     "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
@@ -52,7 +52,7 @@
   },
   {
     "id": 4,
-    "img_path": "./assets/images/readme-generator.png",
+    "img_path": "readme-generator.png",
     "title": "Readme Generator",
     "description": "Command-line application built in Node.js to simplify the creation of professional README files for GitHub projects.",
     "tools": ["JavaScript (ES6+)", "Node.js"],
@@ -69,7 +69,7 @@
   },
   {
     "id": 5,
-    "img_path": "./assets/images/book-search.png",
+    "img_path": "book-search.png",
     "title": "Books Finder API",
     "description": "Uses Google Books API, leverages 'async/await' for efficiency, and offers a user-friendly interface to search, view, and save books.",
     "tools": ["JavaScript (ES6+)", "API", "HTML", "CSS"],
@@ -86,7 +86,7 @@
   },
   {
     "id": 6,
-    "img_path": "./assets/images/calculator.png",
+    "img_path": "calculator.png",
     "title": "Calculator",
     "description": "A calculator with basic functionality made in Vanilla Javascript.",
     "tools": ["JavaScript (ES6+)", "HTML", "CSS"],

@@ -8,10 +8,13 @@ const Projects = () => {
         projectsData.map(project => {
           const{id, img_path, title, description, tools, url} = project;
           
+          // The base URL of your application during development or production.
+          const image = import.meta.env.BASE_URL + 'assets/images/' + img_path;
+
           return(
             <div className="col" key={id}>
               <ProjectCard                 
-                image={img_path}
+                image={image}
                 title={title}
                 description={description}
                 tools={tools}

@@ -7,7 +7,7 @@ const ProjectCard = ({
   tools,
   url,
 }) => {
-  
+
   return (
     <div className="card project">     
       <img src={image} className="card-img-top" alt={title} />
