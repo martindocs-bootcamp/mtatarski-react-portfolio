@@ -3,7 +3,8 @@ import ErrorPage from "./ErrorPage";
 import Home from "./Home";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
-import ProjectCard from "./ProjectCard";
+import ProjectGallery from "./ProjectGallery";
+import ProjectDetail from "./ProjectDetail";
 import AboutMeCard from "./AboutMeCard";
 import SharedLayout from "./SharedLayout";
 import ContactModal from "./ContactModal";
@@ -14,7 +15,8 @@ export {
   Home,
   Navigation,
   Projects,
-  ProjectCard,
+  ProjectGallery,
+  ProjectDetail,
   AboutMeCard,
   SharedLayout,
   ContactModal,

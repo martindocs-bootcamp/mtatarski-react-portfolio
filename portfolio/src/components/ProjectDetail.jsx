@@ -1,15 +1,17 @@
-import {PropTypes} from 'prop-types';
+import { useParams } from 'react-router-dom';
+import projectsData from '../data/projects.json';
 
-const ProjectCard = ({
-  image, 
-  title, 
-  description, 
-  tools,
-  url,
-}) => {
+const ProjectDetail = () => {
 
-  return (
-    <div className="card project">     
+  const{projectId} = useParams();
+
+  const project = projectsData.find(project => project.id === Number(projectId))
+  const{id, img_path, title, description, tools, url} = project;
+  const image = import.meta.env.BASE_URL + 'assets/images/' + img_path;
+
+  return (    
+    <div className="card project">   
+      <div className="card-title">{`Project ${id}`}</div>  
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
@@ -46,12 +48,4 @@ const ProjectCard = ({
   )
 }
 
-ProjectCard.propTypes = {
-  image: PropTypes.string.isRequired, 
-  title: PropTypes.string.isRequired, 
-  description: PropTypes.string.isRequired, 
-  tools: PropTypes.array.isRequired,
-  url: PropTypes.array.isRequired,   
-}
-
-export default ProjectCard;
+export default ProjectDetail;
