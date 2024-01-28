@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import {
   Home,
   Projects,
+  ProjectDetail,
   Contact,
   ErrorPage, 
   SharedLayout,
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="project/:projectId" element={<ProjectDetail />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
