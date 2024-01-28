@@ -1,6 +1,6 @@
 .gallery {
 
-  background: #8a8a8a;
+  background: #f8f9fa;
   overflow: hidden;
   box-shadow: 2px 2px 2px rgb(0,0,0, 0.4);
 
@@ -8,14 +8,17 @@
   &-img {
     height: 350px;
     object-fit: cover;    
+    object-position: 0 100%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-top: 2px solid #5e5e5e;
+  }
+
+  &-img:hover {
+    opacity: 0.85;
   }
 
   &-text {
     font-size: 20px;
-    text-align: center;
-    color: white;
+    text-align: center;   
   }
 }
