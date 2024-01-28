@@ -1,0 +1,49 @@
+.contact {
+  
+  & label {
+    padding-left: 5px;
+    margin: 0;
+  }
+  &-header {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+
+  &-buttons {
+    padding-left: 5px;
+    margin-bottom: 15px;
+  }
+  
+  &-submit, &-clear {
+    width: 80px;
+  }
+  &-submit {
+    background: rgb(40, 147, 155);
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  &-submit:hover {
+    background: rgb(30, 110, 116);    
+    color: #fff;
+  }
+
+  &-email, &-twitter {
+    display: flex;
+    align-items: baseline;
+    color: rgba(107,114,128);
+  }
+
+  &-icon {
+    margin-right: 10px;
+  }
+
+  &-email a, &-twitter a {
+    color: rgba(107,114,128);
+  }
+
+  &-email a:hover, &-twitter a:hover {
+    color: rgb(40, 147, 155);
+  }
+
+}

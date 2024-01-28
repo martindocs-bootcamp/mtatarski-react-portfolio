@@ -36,8 +36,8 @@ const Home = () => {
             <ul className='home-skills'>
               <li className='home-skill'>React</li>
               <li className='home-skill'>Node.js</li>
-              <li className='home-skill'>Boostrali</li>
-              <li className='home-skill'>Exliress.js</li>
+              <li className='home-skill'>Boostrap</li>
+              <li className='home-skill'>Express.js</li>
               <li className='home-skill'>MongoDB</li>
               <li className='home-skill'>CSS3</li>              
             </ul>
