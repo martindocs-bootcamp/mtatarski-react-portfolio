@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 import ProjectGallery from './ProjectGallery';
+import getImagePath from '../utils/getImagePath';
 
 const Projects = () => {
   return (
@@ -8,7 +9,7 @@ const Projects = () => {
       {
         projectsData.map(project => {          
           // The base URL of your application during development or production.
-          const image = import.meta.env.BASE_URL + 'assets/images/' + project.img_path;
+          const image = getImagePath(project.img_path);
           
           return(
             <div className="col" key={project.id}>
