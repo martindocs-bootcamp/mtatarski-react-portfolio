@@ -5,13 +5,15 @@
     "title": "Bug Tracker App",
     "description": "Bug tracking system with customizable options, detailed info, and easy search/filter capabilities.",
     "tools": ["MongoDB", "Express.js", "React", "Node.js", "Sass"],
-    "url": [
+    "url": [      
       {
-        "label": "demo",
+        "icon" : "fa-regular fa-file-lines",
+        "label": "Demo",
         "url": "https://github.com/martindocs/bug-tracker-public"
       },
       {
-        "label": "video",
+        "icon": "fa-solid fa-video",
+        "label": "Video",
         "url" : "https://www.youtube.com/watch?v=AladMbkvbgM"
       }
     ]    
@@ -24,11 +26,13 @@
     "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
     "url": [
       {
-        "label": "live",
-        "url" : "https://saif-uddin-93.github.io/flash-card-trivia/flashcard.html"}
+      "icon" : "fa-brands fa-chrome",
+      "label": "Live",
+      "url" : "https://saif-uddin-93.github.io/flash-card-trivia/flashcard.html"}
       ,
       {
-        "label": "code",
+        "icon" : "fa-brands fa-github",
+        "label": "Code",
         "url" : "https://github.com/martindocs/flash-card-game"
       }
     ]      
@@ -41,11 +45,13 @@
     "tools": ["JavaScript (ES6+)", "Boostrap", "JQuery", "API's"],
     "url": [
       {
-        "label": "live",
+        "icon" : "fa-brands fa-chrome",
+        "label": "Live",
         "url" : "https://martindocs.github.io/mtatarski-weather-dashboard/"
       },
       {
-        "label": "code",
+        "icon" : "fa-brands fa-github",
+        "label": "Code",
         "url" : "https://github.com/martindocs/mtatarski-weather-dashboard"
       }
     ]       
@@ -58,11 +64,13 @@
     "tools": ["JavaScript (ES6+)", "Node.js"],
     "url": [
       {
-        "label": "video",
+        "icon": "fa-solid fa-video",
+        "label": "Video",
         "url" : "https://www.youtube.com/watch?v=ZlBIzv1o_7M"
       },
       {
-        "label": "code",
+        "icon" : "fa-brands fa-github",
+        "label": "Code",
         "url" : "https://github.com/martindocs/mtatarski-readme-generator"
       }
     ]     
@@ -75,11 +83,13 @@
     "tools": ["JavaScript (ES6+)", "API", "HTML", "CSS"],
     "url": [
       {
-        "label": "live",
+        "icon" : "fa-brands fa-chrome",
+        "label": "Live",
         "url" : "https://martindocs.github.io/book-finder-api/"
       },
       {
-        "label": "code",
+        "icon" : "fa-brands fa-github",
+        "label": "Code",
         "url" : "https://github.com/martindocs/book-finder-api"
       }
     ]       
@@ -92,11 +102,13 @@
     "tools": ["JavaScript (ES6+)", "HTML", "CSS"],
     "url": [
       {
-        "label": "live",
+        "icon" : "fa-brands fa-chrome",
+        "label": "Live",
         "url" : "https://martindocs-javascript.github.io/calculator/"
       },
       {
-        "label": "code",
+        "icon" : "fa-brands fa-github",
+        "label": "Code",
         "url" : "https://github.com/martindocs-javascript/calculator"
       }
     ]       

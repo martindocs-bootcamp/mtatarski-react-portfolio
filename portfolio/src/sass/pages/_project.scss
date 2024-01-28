@@ -1,0 +1,59 @@
+.project {
+  margin: 50px 0 50px;
+  width: 60%;
+  box-shadow: 0 2px 2px rgb(0,0,0, 0.4);
+
+  &-title {
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  &-img {
+    height: 350px;
+    object-fit: cover; 
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &-main {
+    padding: 0;
+  }
+
+  &-desc {
+    padding: 16px 16px 0;
+  }
+
+  &-text {
+    padding: 0 16px;
+  }
+
+  &-tools {
+    list-style: none;
+    display: flex;
+    
+    padding: 5px 5px;
+  }
+
+  &-tool {
+    margin: 0 10px; 
+    background: rgba(229,231,235,.8);
+    padding: 2px 10px;
+    border-radius: 4px;  
+    border: 1px solid rgb(0,0,0, 0.1);
+  }
+
+  &-btn {
+    border: 1px solid #d1d5db;
+    margin: 5px;
+  }
+
+  &-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  &-icon {
+    margin-right: 10px;
+  }
+}
