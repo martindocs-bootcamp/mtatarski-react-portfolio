@@ -8,12 +8,13 @@ const ProjectDetail = () => {
   const image = getImagePath(img_path);
 
   return (    
-    <div className="card project">   
-      <div className="card-title">{`Project ${id}`}</div>  
-      <img src={image} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
+    <div className="card project mx-auto">   
+      <div className="card-title project-title">{`Project ${id} - ${title}`}</div>  
+      <img src={image} className="card-img-top project-img" alt={title} />
+      <div className="card-body project-main">
+        <h3 className="card-title project-desc">Description</h3>
+        <p className="card-text project-text">{description}</p>
+        <h4 className="card-title project-desc">Technologies</h4>
         <ul className='project-tools'>      
           {
             tools.map((tool, index)=> {
@@ -27,16 +28,16 @@ const ProjectDetail = () => {
         </ul>
         <div className="card-footer">
           {
-            url.map(({label, url}, index) => {
+            url.map(({icon, label, url}, index) => {
                            
               return (
                 <a 
                   key={index}
                   href={url} 
-                  className="btn btn-primary card-btn-live" 
+                  className="btn project-btn" 
                   target='_blank'
                   rel="noopener noreferrer"
-                >{label}</a>
+                ><i className={`${icon} project-icon`}></i>{label}</a>
               )
             })
           }         
