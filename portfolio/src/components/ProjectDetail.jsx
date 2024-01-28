@@ -8,8 +8,11 @@ const ProjectDetail = () => {
   const image = getImagePath(img_path);
 
   return (    
-    <div className="card project mx-auto">   
-      <div className="card-title project-title">{`Project ${id} - ${title}`}</div>  
+    <div className="row">
+      <div className="col col-md-9 col-lg-7 mx-auto">
+
+      <div className="card project mx-auto">   
+      <div className="card-header project-title">{`Project ${id} - ${title}`}</div>  
       <img src={image} className="card-img-top project-img" alt={title} />
       <div className="card-body project-main">
         <h3 className="card-title project-desc">Description</h3>
@@ -26,7 +29,7 @@ const ProjectDetail = () => {
             })
           }
         </ul>
-        <div className="card-footer">
+        <div className="card-footer project-footer">
           {
             url.map(({icon, label, url}, index) => {
                            
@@ -44,6 +47,12 @@ const ProjectDetail = () => {
         </div>
       </div>
     </div>
+
+
+      </div>
+    
+    </div>
+    
   )
 }
 
