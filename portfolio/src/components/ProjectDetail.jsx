@@ -1,11 +1,8 @@
-import { useParams } from 'react-router-dom';
-import projectsData from '../data/projects.json';
+import { useLocation } from 'react-router-dom';
 
 const ProjectDetail = () => {
-
-  const{projectId} = useParams();
-
-  const project = projectsData.find(project => project.id === Number(projectId))
+  const project = useLocation().state.project;
+  
   const{id, img_path, title, description, tools, url} = project;
   const image = import.meta.env.BASE_URL + 'assets/images/' + img_path;
 

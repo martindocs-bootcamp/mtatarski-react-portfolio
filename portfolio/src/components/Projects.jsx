@@ -13,7 +13,7 @@ const Projects = () => {
           
           return(
             <div className="col" key={project.id}>
-              <Link to={`/project/${project.id}`}>             
+              <Link to={`/project/${project.id}`} state={{project}}>             
                   <ProjectGallery                     
                     image={image} 
                     title={project.title} 
