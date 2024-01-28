@@ -3,11 +3,11 @@ import { PropTypes } from 'prop-types';
 const ProjectGallery = ({image, title}) => {
    
   return (
-    <div className={`card gallery`}>
-      <img src={image} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <p className="card-text">{title}</p>
+    <div className="card gallery">
+      <div className="card-header">
+        <p className="card-text gallery-text">{title}</p>
       </div>
+      <img src={image} className="card-img-top gallery-img" alt={title} />      
     </div>
   )
 }

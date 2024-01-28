@@ -1,10 +1,11 @@
 import { useLocation } from 'react-router-dom';
+import getImagePath from '../utils/getImagePath'; 
 
 const ProjectDetail = () => {
   const project = useLocation().state.project;
   
   const{id, img_path, title, description, tools, url} = project;
-  const image = import.meta.env.BASE_URL + 'assets/images/' + img_path;
+  const image = getImagePath(img_path);
 
   return (    
     <div className="card project">   
