@@ -1,0 +1,21 @@
+.gallery {
+
+  background: #8a8a8a;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgb(0,0,0, 0.4);
+
+  
+  &-img {
+    height: 350px;
+    object-fit: cover;    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 2px solid #5e5e5e;
+  }
+
+  &-text {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+}
