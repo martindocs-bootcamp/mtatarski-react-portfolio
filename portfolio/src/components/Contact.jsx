@@ -2,25 +2,32 @@ import {useState} from 'react';
 import ContactModal from './ContactModal';
 
 const Contact = () => {
+  // State to manage form input values
   const [prop, setProp] = useState({
     name: '',
     subject: '',
     email: '',
     message: '',
   })
+
+  // State to track if the form has been submitted
   const [formSubmitted, setFormSubmitted] = useState(false);
  
+  // Handle form submission
   const handleSubmit = () => {
     const{name, subject, email, message} = prop;
 
+    // Check if any required field is empty
     if(!name || !subject || !email || !message){
       setFormSubmitted(false);
     }else{
+      // Set formSubmitted to true and clear the form
       setFormSubmitted(true);
       handleClear();
     }
   }
 
+  // Clear form input values
   const handleClear = () => {
     setProp({
       name: '',
@@ -30,6 +37,7 @@ const Contact = () => {
     })
   }
 
+  // Handle input changes in the form
   const handleInputChange = (e) => {
     const{name, value} = e.target;
     setProp({...prop, [name]: value});
@@ -42,6 +50,8 @@ const Contact = () => {
           <h2 className='contact-header'>Contact</h2>
           <h3 className='contact-tagline'>Feel free to reach out with any questions or inquiries.</h3>
           <form className="contact-form" onSubmit={(e)=> e.preventDefault()}>
+
+            {/* Form name input fields */}
             <div className="mb-3">
               <label htmlFor="name" className="form-label contact-label">Full name</label>
               <input 
@@ -54,6 +64,8 @@ const Contact = () => {
                 onChange={handleInputChange}
               />
             </div>
+
+            {/* Form subject input fields */}
             <div className="mb-3">
               <label htmlFor="subject" className="form-label contact-label">Subject</label>
               <input 
@@ -66,6 +78,8 @@ const Contact = () => {
                 onChange={handleInputChange}
               />
             </div>
+
+            {/* Form email input fields */}
             <div className="mb-3">
               <label htmlFor="email" className="form-label contact-label">Email</label>
               <input 
@@ -78,6 +92,8 @@ const Contact = () => {
                 onChange={handleInputChange}
               />
             </div>
+
+            {/* Form message input fields */}
             <div className="mb-3">
               <label htmlFor="message" className="form-label contact-label">Message</label>
               <textarea 
@@ -91,6 +107,8 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="contact-buttons">
+              
+              {/* Submit button triggering a modal */}
               <button 
                 type='button'          
                 className="btn contact-submit"
@@ -98,6 +116,8 @@ const Contact = () => {
                 data-bs-target="#submitMsg"   
                 onClick={handleSubmit}      
                 >Submit</button>
+              
+              {/* Clear button */}
               <button 
                 type="button"   
                 className="btn btn-danger contact-clear"
@@ -106,6 +126,7 @@ const Contact = () => {
             </div>
           </form>          
                    
+          {/* Modal for form submission message */}
           <ContactModal 
             msgHeader={formSubmitted ? 'Form Submitted' : 'Form Not Submitted'} 
             msg={
@@ -116,6 +137,8 @@ const Contact = () => {
           />
         </section>
       </div>
+
+      {/* Contact information section */}
       <div className="col-12 col-md-5 col-lg-3 mt-4">       
         <div className="card border-0">
           <div className="card-header bg-transparent">Let&apos;s get in touch</div>
@@ -144,8 +167,7 @@ const Contact = () => {
         </div>
       </div>
 
-    </div>
-    
+    </div>    
   )
 }
 

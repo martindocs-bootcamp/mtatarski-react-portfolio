@@ -2,6 +2,7 @@ import { PropTypes } from 'prop-types';
 
 const ProjectGallery = ({image, title}) => {
    
+  // Render the project gallery card
   return (
     <div className="card gallery">
       <div className="card-header">
@@ -12,6 +13,7 @@ const ProjectGallery = ({image, title}) => {
   )
 }
 
+// PropTypes for type-checking
 ProjectGallery.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
