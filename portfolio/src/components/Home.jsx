@@ -1,5 +1,5 @@
-import profileImg from '../assets/images/me.png';
 import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
+import getImagePath from '../utils/getImagePath';
 
 const Home = () => {
 
@@ -15,7 +15,7 @@ const Home = () => {
         {/* Profile image section */}
         <div className="col col-md-4 d-flex justify-content-center align-items-center">
           <img 
-            src={profileImg} 
+            src={getImagePath('me.png')} 
             className="card-img-top home-img" 
             alt="Photo of Marcin Tatarski on a white background" 
           />

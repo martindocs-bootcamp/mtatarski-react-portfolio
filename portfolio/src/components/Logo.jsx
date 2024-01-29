@@ -1,10 +1,10 @@
-import logo from '../assets/images/logo.png';
+import getImagePath from '../utils/getImagePath';
 
-const Logo = () => {
-
+const Logo = () => {  
+   
   // Render the logo image
   return (    
-    <img src={logo} alt="Website M and T logo" className='logo' />
+    <img src={getImagePath('logo.png')} alt="Website M and T logo" className='logo' />
   )
 }
 
