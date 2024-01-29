@@ -7,5 +7,6 @@ export default defineConfig({
   publicDir: 'public',
   build: {
       outDir: '../'
-  }
+  },
+  base: '/mtatarski-react-portfolio/',
 })
