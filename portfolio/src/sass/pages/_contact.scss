@@ -9,6 +9,22 @@
     text-transform: uppercase;
   }
 
+  &-tagline {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  &-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
   &-buttons {
     padding-left: 5px;
     margin-bottom: 15px;
@@ -18,31 +34,32 @@
     width: 80px;
   }
   &-submit {
-    background: rgb(40, 147, 155);
     color: #fff;
+    background: #333333;
     margin-right: 10px;
   }
   
   &-submit:hover {
-    background: rgb(30, 110, 116);    
+    background: #000;    
     color: #fff;
   }
 
-  &-email, &-twitter {
+  &-email, &-twitter, &-linkedin {
     display: flex;
-    align-items: baseline;
-    color: rgba(107,114,128);
+    align-items: flex-start; 
+    color: rgba(107,114,128);    
   }
 
   &-icon {
     margin-right: 10px;
+    font-size: 25px;
   }
 
-  &-email a, &-twitter a {
+  &-email a, &-twitter a, &-linkedin a {
     color: rgba(107,114,128);
   }
 
-  &-email a:hover, &-twitter a:hover {
+  &-email a:hover, &-twitter a:hover, &-linkedin a:hover {
     color: rgb(40, 147, 155);
   }
 

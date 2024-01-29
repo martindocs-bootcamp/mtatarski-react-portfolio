@@ -37,52 +37,56 @@ const Contact = () => {
 
   return (
     <div className="row">
-      <div className="col col-md-10 col-lg-8 mx-auto">
+      <div className="col-12 col-md-6 col-lg-8 mx-auto">
         <section className="contact">      
           <h2 className='contact-header'>Contact</h2>
-          
+          <h3 className='contact-tagline'>Feel free to reach out with any questions or inquiries.</h3>
           <form className="contact-form" onSubmit={(e)=> e.preventDefault()}>
             <div className="mb-3">
-              <label htmlFor="name" className="form-label">Full name</label>
+              <label htmlFor="name" className="form-label contact-label">Full name</label>
               <input 
                 type="text" 
                 className="form-control" 
                 id="name" 
                 name="name"
                 value={prop.name}
+                placeholder='Full name'
                 onChange={handleInputChange}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="subject" className="form-label">Subject</label>
+              <label htmlFor="subject" className="form-label contact-label">Subject</label>
               <input 
                 type="text" 
                 className="form-control" 
                 id="subject" 
                 name="subject"
                 value={prop.subject}
+                placeholder='Subject'
                 onChange={handleInputChange}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email</label>
+              <label htmlFor="email" className="form-label contact-label">Email</label>
               <input 
                 type="email" 
                 className="form-control" 
                 id="email" 
                 name="email"
                 value={prop.email}
+                placeholder='email'
                 onChange={handleInputChange}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="message" className="form-label">Message</label>
+              <label htmlFor="message" className="form-label contact-label">Message</label>
               <textarea 
                 className="form-control" 
                 id="message" 
                 rows="3"
                 name="message"
                 value={prop.message} 
+                placeholder='message'
                 onChange={handleInputChange}
               ></textarea>
             </div>
@@ -100,31 +104,7 @@ const Contact = () => {
                 onClick={handleClear}
               >Clear</button>
             </div>
-          </form>
-
-          <div className="row">
-            <div className="col col-md-6">
-
-              <div className="card">
-                <div className="card-header">Alternatively you can reach me</div>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item contact-email">
-                    <i className="fa-regular fa-envelope contact-icon"></i> 
-                    <a href="mailto:martin.tatarski@gmail.com">martin.tatarski@gmail.com</a>              
-                  </li>
-                  <li className="list-group-item contact-twitter">
-                    <i className="fa-brands fa-square-x-twitter contact-icon"></i>
-                    <a 
-                      href="https://twitter.com/MartinTatarski"
-                      target='_blank'
-                      rel="noopener noreferrer"
-                    >/MartinTatarski</a> 
-                  </li>          
-                </ul>
-              </div>
-
-            </div>
-          </div>
+          </form>          
                    
           <ContactModal 
             msgHeader={formSubmitted ? 'Form Submitted' : 'Form Not Submitted'} 
@@ -136,6 +116,34 @@ const Contact = () => {
           />
         </section>
       </div>
+      <div className="col-12 col-md-5 col-lg-3 mt-4">       
+        <div className="card border-0">
+          <div className="card-header bg-transparent">Let&apos;s get in touch</div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item contact-email">
+              <i className="fa-regular fa-envelope contact-icon"></i> 
+              <a href="mailto:martin.tatarski@gmail.com">martin.tatarski@gmail.com</a>              
+            </li>
+            <li className="list-group-item contact-linkedin">
+              <i className="fa-brands fa-linkedin contact-icon"></i>
+              <a 
+                href="https://www.linkedin.com/in/marcin-tatarski/"
+                target='_blank'
+                rel="noopener noreferrer"
+              >/marcin-tatarski</a> 
+            </li>          
+            <li className="list-group-item contact-twitter border-bottom">
+              <i className="fa-brands fa-square-x-twitter contact-icon"></i>
+              <a 
+                href="https://twitter.com/MartinTatarski"
+                target='_blank'
+                rel="noopener noreferrer"
+              >/MartinTatarski</a> 
+            </li>          
+          </ul>
+        </div>
+      </div>
+
     </div>
     
   )
