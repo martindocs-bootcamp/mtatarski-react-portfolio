@@ -3,6 +3,7 @@ import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
 
 const Home = () => {
 
+  // Function to open the PDF resume in a new tab
   const openPdfInNewTab = () => {
     window.open(resume, '_blank');
   }
@@ -10,6 +11,8 @@ const Home = () => {
   return (
     <div className="card home">
       <div className="row">      
+
+        {/* Profile image section */}
         <div className="col col-md-4 d-flex justify-content-center align-items-center">
           <img 
             src={profileImg} 
@@ -17,22 +20,32 @@ const Home = () => {
             alt="Photo of Marcin Tatarski on a white background" 
           />
         </div>
+
+        {/* Main content section */}
         <div className="col col-md-8">
           <div className="card-header home-header">Hi, I&apos;m Marcin</div>
           <div className="card-body home-content">
-            <h3 className='home-tagline'>Front-End Web Developer</h3>            
+            <h3 className='home-tagline'>Front-End Web Developer</h3>    
+
+            {/* Location information */}        
             <div className='home-location d-flex align-items-baseline'>
               <i className="fa-solid fa-location-dot home-icon"></i> 
               <div>Worcester, UK</div>
             </div>
+
+            {/* Email information */}
             <div className='home-email d-flex align-items-baseline'>
               <i className="fa-regular fa-envelope home-icon"></i> 
               <a href="mailto:martin.tatarski@gmail.com">martin.tatarski@gmail.com</a>
             </div>
+
+            {/* Resume button */}
             <div className='home-resume d-flex align-items-baseline'>
               <i className="fa-regular fa-file home-icon"></i>
               <button onClick={openPdfInNewTab}>Resume</button>              
-            </div>           
+            </div>         
+
+            {/* Skills list */}  
             <ul className='home-skills'>
               <li className='home-skill'>React</li>
               <li className='home-skill'>Node.js</li>
@@ -41,6 +54,8 @@ const Home = () => {
               <li className='home-skill'>MongoDB</li>
               <li className='home-skill'>CSS3</li>              
             </ul>
+
+            {/* Social media */}
             <div className='home-btn'>             
               <a 
                 type="button"
@@ -70,6 +85,8 @@ const Home = () => {
           </div>          
         </div>
       </div>
+
+      {/* About me section */}
       <div className="row home-me">
         <div className="col">
             <p className='home-me-text'>

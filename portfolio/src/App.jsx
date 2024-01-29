@@ -15,11 +15,16 @@ function App() {
   return (
     <Router>    
       <Routes>
+        {/* SharedLayout is used as a layout wrapper for all routes */}
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+
+          {/* ProjectDetail route with dynamic parameter 'id' */}
           <Route path="project/:id" element={<ProjectDetail />} />
           <Route path="contact" element={<Contact />} />
+
+          {/* Catch-all route for any unmatched paths */}
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
