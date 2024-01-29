@@ -7,6 +7,7 @@ import ProjectGallery from "./ProjectGallery";
 import ProjectDetail from "./ProjectDetail";
 import SharedLayout from "./SharedLayout";
 import ContactModal from "./ContactModal";
+import Footer from "./Footer";
 
 export {
   Contact,
@@ -18,4 +19,5 @@ export {
   ProjectDetail,
   SharedLayout,
   ContactModal,
+  Footer,
 }
