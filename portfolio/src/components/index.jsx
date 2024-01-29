@@ -5,7 +5,6 @@ import Navigation from "./Navigation";
 import Projects from "./Projects";
 import ProjectGallery from "./ProjectGallery";
 import ProjectDetail from "./ProjectDetail";
-import AboutMeCard from "./AboutMeCard";
 import SharedLayout from "./SharedLayout";
 import ContactModal from "./ContactModal";
 
@@ -17,7 +16,6 @@ export {
   Projects,
   ProjectGallery,
   ProjectDetail,
-  AboutMeCard,
   SharedLayout,
   ContactModal,
 }

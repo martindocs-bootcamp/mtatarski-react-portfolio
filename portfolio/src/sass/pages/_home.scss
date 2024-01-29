@@ -13,8 +13,9 @@
     border: 0;
     background: none;
     font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 900;
+    letter-spacing: 1px;
+    // text-transform: uppercase;
+    font-weight: 700;
     padding-bottom: 0;
   }
 
@@ -24,8 +25,8 @@
   }
 
   &-tagline {
-    font-family: 'Indie Flower', sans-serif;
-    font-size: 20px;    
+    // font-family: 'Indie Flower', sans-serif;
+    font-size: 16px;    
     color: rgba(107,114,128);
   }
 
@@ -34,7 +35,7 @@
   }
 
   &-location {
-    padding-left: 2px;
+    padding-left: 2px;    
   }
   
   &-email a {
@@ -48,7 +49,7 @@
     background: transparent;
     border: none;
     text-decoration: underline;
-    color: rgba(107,114,128);
+    color: rgba(107,114,128);    
   }
 
   &-resume button:hover {
@@ -70,21 +71,33 @@
   &-skill {
     background: rgba(229,231,235,.8);    
     margin: 5px 10px 5px 0;
-    padding: 2px 10px;
+    padding: 0 10px;
+    font-size: 15px;
     border-radius: 5px;
   }
 
   &-btn button {
     padding-left: 0;
+    padding-right: 18px;
   }
 
-  &-btn-github, &-btn-linkedin {
-    font-size: 30px;
+  &-btn-github, &-btn-linkedin, &-btn-twitter {
+    font-size: 25px;
+    padding: 0 8px;
   }
 
-  &-btn-github:hover, &-btn-linkedin:hover {
+  &-btn-github {
+    padding-left: 0;
+  }
+
+  &-btn-github:hover, &-btn-linkedin:hover, &-btn-twitter:hover {
     color: rgb(40, 147, 155);
   }
+
+  &-btn-github:focus, &-btn-linkedin:focus, &-btn-twitter:focus {
+    border: none;
+  }
+
   &-me {
     padding-top: 50px;
   }
@@ -93,4 +106,17 @@
     text-align: justify;
   }
 
+  @media (max-width: 1200px){
+    &-img {
+      width: 250px;
+    }
+  }
+
+  @media (max-width: 768px){
+    &-img {
+      width: 250px;
+    }
+  }
+
 }
+
