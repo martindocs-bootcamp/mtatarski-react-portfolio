@@ -1,0 +1,17 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &-header {
+    padding-left: 20px;
+  }
+
+  &-img {
+    height: 80%;
+  }
+
+  &-home {
+    color: rgb(18, 78, 209);
+  }
+}
