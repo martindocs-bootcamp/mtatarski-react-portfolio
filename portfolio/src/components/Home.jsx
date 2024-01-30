@@ -1,12 +1,9 @@
-import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
+// import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
 import getImagePath from '../utils/getImagePath';
+import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
+import openNewTab from '../utils/openDocInNewTab';
 
 const Home = () => {
-
-  // Function to open the PDF resume in a new tab
-  const openPdfInNewTab = () => {
-    window.open(resume, '_blank');
-  }
 
   return (
     <div className="card home">
@@ -42,7 +39,7 @@ const Home = () => {
             {/* Resume button */}
             <div className='home-resume d-flex align-items-baseline'>
               <i className="fa-regular fa-file home-icon"></i>
-              <button onClick={openPdfInNewTab}>Resume</button>              
+              <button onClick={()=> openNewTab(resume)}>Resume</button>              
             </div>         
 
             {/* Skills list */}  

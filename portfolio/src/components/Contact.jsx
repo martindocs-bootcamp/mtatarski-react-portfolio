@@ -1,5 +1,7 @@
 import {useState} from 'react';
 import ContactModal from './ContactModal';
+import resume from '../assets/docs/Marcin-Tatarski-CV.pdf';
+import openNewTab from '../utils/openDocInNewTab';
 
 const Contact = () => {
   // State to manage form input values
@@ -42,7 +44,7 @@ const Contact = () => {
     const{name, value} = e.target;
     setProp({...prop, [name]: value});
   }
-
+ 
   return (
     <div className="row">
       <div className="col-12 col-md-6 col-lg-8 mx-auto">
@@ -108,7 +110,7 @@ const Contact = () => {
             </div>
             <div className="contact-buttons">
               
-              {/* Submit button triggering a modal */}
+              {/* Submit button trigger a modal */}
               <button 
                 type='button'          
                 className="btn contact-submit"
@@ -162,6 +164,10 @@ const Contact = () => {
                 target='_blank'
                 rel="noopener noreferrer"
               >/MartinTatarski</a> 
+            </li>          
+            <li className="list-group-item contact-resume border-bottom">
+              <i className="fa-regular fa-file contact-icon"></i>
+              <button onClick={()=> openNewTab(resume)}>Resume</button>
             </li>          
           </ul>
         </div>
