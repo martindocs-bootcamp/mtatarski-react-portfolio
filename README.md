@@ -25,7 +25,7 @@ To use the Readme Generator, follow these steps:
 2. Clone this repository to your local machine.
 
 ```sh
-git clone https://github.com/martindocs-bootcamp/mtatarski-react-portfolio.git
+git clone https://github.com/martindocs/mtatarski-react-portfolio.git
 ```
 
 3. Navigate to the project directory.
@@ -46,7 +46,7 @@ To access and view my portfolio website, you can follow these simple steps:
 
 1. Open a web browser.
 
-2. Navigate to the following URL: https://martindocs-bootcamp.github.io/mtatarski-react-portfolio/
+2. Navigate to the following URL: https://martindocs.github.io/mtatarski-react-portfolio/#/
 
 3. Explore the various sections, including `Projects` and `Contact`, to learn more about my skills and projects.
 
