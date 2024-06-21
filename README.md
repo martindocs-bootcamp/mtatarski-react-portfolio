@@ -25,7 +25,7 @@ To use the Readme Generator, follow these steps:
 2. Clone this repository to your local machine.
 
 ```sh
-git clone https://github.com/martindocs/mtatarski-react-portfolio.git
+git clone https://github.com/martindocs-bootcamp/mtatarski-react-portfolio.git
 ```
 
 3. Navigate to the project directory.
